@@ -18,25 +18,24 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class SeleniumhqTest {
-
+//Test to load the seleniumhq.org site, click the Download tab and verify the Downloads page title says "Downloads"
     @Test
-
     public void seleniumhqFF() {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://seleniumhq.org");
 
         WebElement downloadtab = driver.findElement(By.cssSelector("#menu_download a"));
-        WebDriverWait wait = new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.elementToBeClickable(downloadtab));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        //wait.until(ExpectedConditions.elementToBeClickable(downloadtab));
         downloadtab.click();
         org.junit.Assert.assertEquals("Downloads", driver.getTitle());
 
-                // WebElement downloadtab = driver.findElement(By.id("menu_download"));
-                //WebElement downloadlink = downloadtab.findElement(By.tagName("a"));
-                //downloadlink.click();
+        //WebElement downloadtab = driver.findElement(By.id("menu_download"));
+        //WebElement downloadlink = downloadtab.findElement(By.tagName("a"));
+        //downloadlink.click();
 
-                //driver.close();
-                driver.quit();
+        //driver.close();
+        driver.quit();
     }
 }
 
