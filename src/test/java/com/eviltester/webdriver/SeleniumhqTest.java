@@ -24,15 +24,16 @@ public class SeleniumhqTest {
         WebDriver driver = new FirefoxDriver();
         driver.get("http://seleniumhq.org");
 
-        WebElement downloadtab = driver.findElement(By.cssSelector("#menu_download a"));
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        //WebElement downloadtab = driver.findElement(By.cssSelector("#menu_download a"));
+        //WebDriverWait wait = new WebDriverWait(driver, 10);
         //wait.until(ExpectedConditions.elementToBeClickable(downloadtab));
-        downloadtab.click();
-        org.junit.Assert.assertEquals("Downloads", driver.getTitle());
+        //downloadtab.click();
+        //org.junit.Assert.assertEquals("Downloads", driver.getTitle());
 
-        //WebElement downloadtab = driver.findElement(By.id("menu_download"));
-        //WebElement downloadlink = downloadtab.findElement(By.tagName("a"));
-        //downloadlink.click();
+        WebElement downloadtab = driver.findElement(By.id("menu_download"));
+        WebElement downloadlink = downloadtab.findElement(By.tagName("a"));
+        downloadlink.click();
+        org.junit.Assert.assertEquals("Downloads", driver.getTitle());
 
         //driver.close();
         driver.quit();
