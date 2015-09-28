@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c97ed65-b141-4ad9-bd35-fc71bc801490" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/eviltester/webdriver/SeleniumhqTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/eviltester/webdriver/SeleniumhqTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SeleniumTest.iws" />
     <ignored path=".idea/workspace.xml" />
